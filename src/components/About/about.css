@@ -1,0 +1,40 @@
+.about-container {
+  height: 100vh;
+  display: flex;
+  gap: 80px;
+  width: 100%;
+  align-items: center;
+}
+
+.about-left {
+  height: 80%;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 0px;
+  flex: 1;
+}
+
+.items-image {
+  width: 200px;
+
+}
+
+.about-item {
+  flex: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  background-color: #212121;
+}
+
+.about-right {
+  flex: 1;
+}

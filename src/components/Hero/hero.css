@@ -1,9 +1,19 @@
 .hero-container {
   height: calc(100vh - 80px);
   display: flex;
+  scroll-snap-align: center;
   align-items: center;
+  flex-direction: column;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.hero-section {
+  height: 100%;
+  scroll-snap-align: center;
+  align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -12,7 +22,14 @@
   width: 40%;
   display: flex;
   flex-direction: column;
+  flex: 2;
   gap: 20px;
+}
+
+.hero-right {
+  flex: 3;
+  height: 100%;
+  position: relative;
 }
 
 .hero-title {
@@ -26,7 +43,22 @@
 }
 
 .hero-img {
-  height: 90%;
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 800px;
+  height: 800px;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px)
+  }
 }
 
 .dwnld-button {
@@ -38,4 +70,11 @@
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-right {
+    flex: 1;
+    width: 100%;
+  }
 }
