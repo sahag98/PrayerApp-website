@@ -1,0 +1,41 @@
+.hero-container {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-header {
+  font-size: 2.5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  letter-spacing: 0.2rem;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  line-height: 25px;
+  color: #888888;
+}
+
+.hero-img {
+  height: 90%;
+}
+
+.dwnld-button {
+  width: 50%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #A5C9FF;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
